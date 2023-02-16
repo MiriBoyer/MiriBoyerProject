@@ -20,9 +20,6 @@ namespace Entity.Entities
         [Required]
         [MaxLength(9)]
         [MinLength(9)]
-        //jhjh
-        //fgfdg
-        //hjghj
         public string IdNumber { get; set; }
         [Required]
         public DateTime DOB { get; set; }
