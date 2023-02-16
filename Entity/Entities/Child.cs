@@ -8,12 +8,16 @@ using System.Threading.Tasks;
 namespace Entity.Entities
 {
     public class Child
-    {//vcvcvc
+    {
         [Key]
         public int Id { get; set; }
+        [Required]
         public string Name { get; set; }
+        [Required]
+        [MaxLength(9)]
+        [MinLength(9)]
         public string IdNumber { get; set; }
+        [Required]
         public DateTime DOB { get; set; }
-        //public User Parent { get; set; }
     }
 }

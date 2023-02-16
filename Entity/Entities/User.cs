@@ -13,12 +13,24 @@ namespace Entity.Entities
     {
         [Key]
         public int Id { get; set; }
+        [Required]
         public string FirstName { get; set; }
+        [Required]
         public string LastName { get; set; }
+        [Required]
+        [MaxLength(9)]
+        [MinLength(9)]
+        //jhjh
+        //fgfdg
+        //hjghj
         public string IdNumber { get; set; }
+        [Required]
         public DateTime DOB { get; set; }
+        [Required]
         public string gender { get; set; }
+        [Required]
         public string HOM { get; set; }
+        [Required]
         public ICollection<Child> Children { get; set; }
     }
 }
